@@ -1,0 +1,9 @@
+spring boot war file with explicit web or app server..
+
+
+to achieve this
+
+1) added spring-boot-starter-tomcat dependency with provided scope, it means asking boot to skip embedded tomcat server
+2) main method not recognize by other servers to achieve this, we have to extends SpringbootApplication class from SpringBootServletInitilizer
+and implement configure method and pass SpringbootApplication.class as input 
+3) change jar to war in pom.xml
