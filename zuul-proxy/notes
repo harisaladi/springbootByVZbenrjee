@@ -1,0 +1,7 @@
+http://localhost:9999/app/service/
+will be replace by
+http://emp-service/
+remaining path will be same like http://emp-service/emp/list
+
+http://localhost:9999/app/services/emp/list - to access direct emp services with load balancing
+http://localhost:9999/app/client/hr/list - to access hr service using , hr service will interact with emp services
